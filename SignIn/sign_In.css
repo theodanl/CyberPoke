@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(/SignIn/img/background-Sign_In.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/* Работа с формой */
+.box{
+    width: 300px;
+    height: 570px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(241, 189, 202, 0.863);
+    opacity: 0.8;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgb(255 70 79);
+    font-family: 'Montserrat', sans-serif;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    background: rgba(228, 172, 191, 0.8);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+    box-shadow: 5px 5px 30px rgb(0, 253, 190);
+    border-radius: 25px;
+}
+
+
+.box input[type = "Username"],.box input[type = "Password"]{
+    border: none;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 7px 5px;
+    width: 200px;
+    outline: none;
+    transition: 0.25s;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.form__btn{
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 1px rgb(232 45 235);
+    border: none;
+    background-color: #eb80ef;
+    font-size: 20px;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+}
+.box h1{
+    padding: 20px;
+    opacity: 1;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box h4{
+    padding-top: 10px;
+    font-weight: 100;
+
+}
+
+.box h3{
+    padding: 20px;
+}
+

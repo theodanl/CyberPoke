@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber | Sign In</title>
+    <link rel="shortcut icon" href="/SignIn/img/logo.png" type="image/ico">
+    <link rel="stylesheet" href="/SignIn/sign_In.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<form class="box" action="/phpFile/auth.php" method="post">
+    <style>
+        .img-logo img{
+            width: 128px;
+            height: 128px;
+            opacity: 1;
+        }
+    </style>
+    <div class="img-logo">
+        <img src="/SignIn/img/logo.png">
+    </div>
+    <h1>Вход</h1>
+    <input type="Username"  name="Login"  class="form__input" placeholder="Username or email">
+    <input type="password" name="Password" class="form__input" placeholder="Password">
+    <button class="form__btn">Sign In</button>
+    <h4>Or login with</h4>
+    <style>
+        .imgsize img{
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+<div class="imgsize">
+    <img  src="/SignIn/img/pngegg (10).png" width="32px" height="32px">
+    <img src="/SignIn/img/pngegg (12).png" width="32px" height="32px">
+ </div>
+ <style>
+  a {
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+</style>
+ <h3><a href="../SignUp/index.html">Sign Up</a></h3>
+</form>
+<script src="../js/index.js"></script>
+</body>
+</html>

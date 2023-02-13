@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(../img/cyber-girl-with-gun-4k-fv-2880x1800.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/* Стилизация формы и с последующим её смещением */
+.box{
+    width: 500px;
+    height: 700px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgb(199, 167, 153);
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px rgb(0, 47, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    background: rgba(118, 189, 255, 0.8);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+    box-shadow: 5px 5px 30px rgb(0, 4, 253);
+    border-radius: 25px;
+}
+/* Стили для каждого поля регистрации */
+.box input[type = "login"],.box input[type = "email"],.box input[type = "number"],.box input[type = "password"],.box input[type = "repeat_password"]{
+    border: 2px solid #225bf7;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 7px 1px;
+    width: 200px;
+    height: 20px;
+    outline: none;
+    transition: 0.25s;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.box input[type = "submit"]{
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 1px rgb(93, 150, 255);
+    border: none;
+    background-color: #225bf7;
+    font-size: 20px;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+}
+
+.box h1{
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.form__btn{
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 1px rgb(93, 150, 255);
+    border: none;
+    background-color: #225bf7;
+    font-size: 20px;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Secular One', sans-serif;
+}
+
+h1{
+    font-size: 16px;
+    flood-color: aqua;
+}
