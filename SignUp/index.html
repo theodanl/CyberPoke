@@ -7,11 +7,12 @@
     <title>Cyber | Sign Up</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/ico">
     <link rel="stylesheet" href="css/sign_Up.css">
+    <script defer src="/js/jquery-3.6.3.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Secular+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form class="box" id= "form" name="form" action="/phpFile/check.php" method="post" onsubmit="ValidateForm">
+    <form class="box" id= "form" name="form" action="../phpFile/check.php" method="post">
         <style>
             .img-logo img{
                 width: 128px;
@@ -38,7 +39,7 @@
     </div>
     <div class="input_control">
         <input type="number" class="input js-input js-input-number" id="Number" 
-        name="Number" placeholder="8xxxxxxxxxx">
+        name="Number">
         <div class="error"></div>
     </div>
     <div class="input_control">
@@ -53,6 +54,6 @@
     </div>
         <button class="form__btn" type="submit">Sign Up</button>
     </form>
-    <script src="../js/signUP.js"></script>
+    <script src="/js/signUP.js"></script>
 </body>
 </html>

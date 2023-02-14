@@ -6,21 +6,10 @@ const Number = document.getElementById('Number');
 const Password = document.getElementById('Password');
 const Repeat_Password = document.getElementById('Repeat_Password');
 
-form.addEventListener('submit', (elem) => {
-    elem.preventDefault();
-    
-    ValidateInputs();
+
+$(function(){
+    $("#Number").mask("+7(999) 999-9999");
 });
-
-
-const SetError = (element,message) => {
-    const InputControl = Element.parentElement;
-    const errorDisplay = InputControl.quearySelector('error');
-}
-
-const setSucces = (element,message) => {
-    
-}
 
 
 

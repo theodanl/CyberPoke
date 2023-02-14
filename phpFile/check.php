@@ -1,4 +1,8 @@
 <?php
+// проверка на ошибки
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
     $Login = filter_var(trim($_POST['Login']),
       FILTER_SANITIZE_STRING);
     $Email = filter_var(trim($_POST['Email']),
