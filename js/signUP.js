@@ -24,3 +24,32 @@ const setSucces = (element,message) => {
 
 
 
+
+// Поля об ошибках 
+
+Login.addEventListener("input", function(event) {
+    if (Login.validity.typeMismath) {
+        Login.setCustomValidity("error type Login");
+    } else {
+        Login.setCustomValidity ("");
+    }
+});
+
+Email.addEventListener("input", function(event) {
+    if (Email.validity.typeMismath) {
+        Email.setCustomValidity ("error type Email");
+    } else {
+        Email.setCustomValidity ("");
+
+    }
+});
+
+Number.addEventListener("input", function(event) {
+    if (Number.validity.typeMismath) {
+        Number.setCustomValidity("error type Number")       
+    } else {
+        Number.setCustomValidity("");
+    }
+});
+
+
