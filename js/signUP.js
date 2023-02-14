@@ -7,14 +7,8 @@ const Password = document.getElementById('Password');
 const Repeat_Password = document.getElementById('Repeat_Password');
 
 
-$(function(){
-    $("#Number").mask("+7(999) 999-9999");
-});
 
-
-
-
-// Поля об ошибках 
+// Поля  ошибки 
 
 Login.addEventListener("input", function(event) {
     if (Login.validity.typeMismath) {
@@ -38,6 +32,22 @@ Number.addEventListener("input", function(event) {
         Number.setCustomValidity("error type Number")       
     } else {
         Number.setCustomValidity("");
+    }
+});
+
+Password.addEventListener("input", function(event) {
+    if (Password.validity.typeMismath) {
+        Password.setCustomValidity("error type Number")       
+    } else {
+        Password.setCustomValidity("");
+    }
+});
+
+Repeat_Password.addEventListener("input", function(event) {
+    if (Repeat_Password.validity.typeMismath) {
+        Repeat_Password.setCustomValidity("error type Number")       
+    } else {
+        Repeat_Password.setCustomValidity("");
     }
 });
 
