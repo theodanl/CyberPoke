@@ -7,6 +7,11 @@ const Password = document.getElementById('Password');
 const Repeat_Password = document.getElementById('Repeat_Password');
 
 
+// Регулярные выражения 
+const mask1 =  [0-9]
+
+
+
 
 // Поля  ошибки 
 
